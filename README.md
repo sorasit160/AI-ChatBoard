@@ -1,6 +1,6 @@
 # Walkthrough: AI ChatBoard & Analytics Dashboard
 ผมได้พัฒนา Full-Stack Application เสร็จสมบูรณ์ตามความต้องการแล้วครับ ประกอบด้วยระบบ Frontend (React/Vite) และ Backend (Node.js/Express) ที่แยกส่วนกันอย่างชัดเจน พร้อมการออกแบบ UI ที่ทันสมัยแบบ Glassmorphism และฟีเจอร์ครบถ้วนครับ
-# (หลังโหลด File ไปแล้ว ให้ติดตั้ง React (npm install) เพื่อที่สามารถใช้งานได้ปกติ)
+(หลังโหลด File ไปแล้ว ให้ติดตั้ง React (npm install) เพื่อที่สามารถใช้งานได้ปกติ)
 
 # AI ChatBoard & Analytics Dashboard
 
