@@ -1,7 +1,6 @@
 # AI-ChatBoard
 
 Project Structure
-d:\AI2\
 ├── frontend/               # React + Vite app
 │   ├── src/
 │   │   ├── components/     # Reusable UI components
@@ -22,6 +21,7 @@ d:\AI2\
     │   ├── db/             # SQLite setup + migrations
     │   └── types/          # TypeScript types
     └── package.json
+
 
 
 Walkthrough: AI ChatBoard & Analytics Dashboard
