@@ -1,3 +1,7 @@
+Walkthrough: AI ChatBoard & Analytics Dashboard
+ผมได้พัฒนา Full-Stack Application เสร็จสมบูรณ์ตามความต้องการแล้วครับ ประกอบด้วยระบบ Frontend (React/Vite) และ Backend (Node.js/Express) ที่แยกส่วนกันอย่างชัดเจน พร้อมการออกแบบ UI ที่ทันสมัยแบบ Glassmorphism และฟีเจอร์ครบถ้วนครับ
+# (หลังโหลด File ไปแล้ว ให้ติดตั้ง React (npm install) เพื่อที่สามารถใช้งานได้ปกติ)
+
 # AI ChatBoard & Analytics Dashboard
 
 A modern full-stack application featuring an AI-powered chatbot, a community board, and an analytics dashboard.
@@ -78,19 +82,6 @@ npx playwright test
 To run tests with UI mode:
 ```bash
 npx playwright test --ui
-```
-
-## Environment Variables
-
-### Backend (`backend/.env`)
-```
-PORT=3001
-JWT_SECRET=your-super-secret-jwt-key
-JWT_EXPIRES_IN=7d
-GEMINI_API_KEY=your-gemini-api-key-here # Leave default to use mock AI
-NODE_ENV=development
-CORS_ORIGIN=http://localhost:5173
-DB_PATH=./database.sqlite
 ```
 
 ### Frontend (`frontend/.env`)
