@@ -12,7 +12,7 @@ export default function LoginPage() {
   const { isAuthenticated, setAuth } = useAuthStore();
 
   const [isLogin, setIsLogin] = useState(true);
-  const [formData, setFormData] = useState({ username: '', email: '', password: '' });
+  const [formData, setFormData] = useState({ username: '', email: 'admin@example.com', password: '123456' });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
