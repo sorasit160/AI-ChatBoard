@@ -1,0 +1,234 @@
+/* BoardPage.css */
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.board-subtitle {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-xs);
+}
+
+.board-controls {
+  margin-bottom: var(--spacing-lg);
+}
+
+.search-input {
+  max-width: 400px;
+}
+
+/* Post List */
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.post-card {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-lg);
+  cursor: pointer;
+  opacity: 0;
+  animation: slideIn 0.3s ease forwards;
+}
+
+.post-card.pinned {
+  border-left: 3px solid var(--color-primary);
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.05) 0%, transparent 100%);
+}
+
+.post-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.post-card-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+}
+
+.post-card:hover .post-card-title {
+  color: var(--color-primary);
+}
+
+.post-card-preview {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-md);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-card-footer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.post-card-stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-left: var(--spacing-lg);
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.stat-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-surface-2);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-lg) 0;
+}
+
+/* Thread View */
+.thread-view {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.post-main {
+  padding: var(--spacing-xl);
+}
+
+.post-main-header {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.post-main-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.post-main-content {
+  font-size: var(--font-size-base);
+  line-height: 1.7;
+  color: var(--color-text);
+  white-space: pre-wrap;
+  margin-bottom: var(--spacing-xl);
+}
+
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-md);
+}
+
+/* Replies */
+.replies-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.replies-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.replies-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.reply-card {
+  padding: var(--spacing-lg);
+  background: var(--color-surface-2);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.reply-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+}
+
+.reply-author {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.reply-date {
+  color: var(--color-text-muted);
+}
+
+.reply-content {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.reply-form {
+  padding: var(--spacing-lg);
+}
+
+.reply-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .post-card {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  .post-card-stats {
+    flex-direction: row;
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+}
