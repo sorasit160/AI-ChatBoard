@@ -1,6 +1,8 @@
 # AI ChatBoard & Analytics Dashboard
-
-A modern full-stack application featuring an AI-powered chatbot, a community board, and an analytics dashboard.
+เป็น Full-Stack Application เสร็จสมบูรณ์ตามความต้องการแล้วครับ ประกอบด้วยระบบ Frontend (React/Vite) และ Backend (Node.js/Express) 
+ที่แยกส่วนกันอย่างชัดเจน พร้อมการออกแบบ UI ที่ทันสมัยแบบ Glassmorphism และฟีเจอร์ครบถ้วนครับ
+- ให้ติดตั้ง React หลังโหลด File มา (npm install).
+- A modern full-stack application featuring an AI-powered chatbot, a community board, and an analytics dashboard.
 Built with React, Node.js, Express, and SQLite (WebAssembly `sql.js`).
 
 ## Features
